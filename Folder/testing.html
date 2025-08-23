@@ -1,131 +1,181 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clean Header</title>
+  <meta charset="UTF-8">
+  <title>Menu Page</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #0f172a;   /* slate-900 */
-      --muted: #475569;  /* slate-600 */
-      --ring: #e2e8f0;   /* slate-200 */
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: var(--bg); }
+    /* Basic Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
 
     /* Header */
-    header.site-header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: saturate(180%) blur(8px);
-      background: color-mix(in oklab, var(--bg) 75%, transparent);
-      border-bottom: 1px solid var(--ring);
+    header {
+      background-color: #fff;
+      border-bottom: 2px solid #f0c040;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
     }
-    .container {
-      max-width: 1100px; margin: 0 auto; padding: 0.75rem 1rem;
-      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.5rem;
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+    nav a { text-decoration: none; color: #333; margin: 0 10px; font-weight: bold; }
+
+    /* Main content spacing */
+    main { padding-top: 120px; width: 80%; margin: 0 auto; }
+
+    /* Tabs */
+    .menu-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .menu-tabs input[type="radio"] { display: none; }
+    .menu-tabs label {
+      padding: 10px 20px;
+      background-color: #eee;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      font-weight: bold;
+    }
+    .menu-tabs input[type="radio"]:checked + label {
+      background-color: #f0c040;
+      color: white;
     }
 
-    /* Logo */
-    .logo a {
-      display: inline-flex; align-items: center; gap: .5rem;
-      text-decoration: none; color: inherit; font-weight: 700; letter-spacing: .02em;
-    }
-    .logo img, .logo svg { height: 28px; width: auto; }
+    /* Tab content */
+    .menu-content { border-top: 2px solid #f0c040; background-color: #fafafa; padding: 20px; }
+    .tab-content { display: none; }
+    #hot-drinks:checked ~ .menu-content #content-hot-drinks,
+    #toasts:checked ~ .menu-content #content-toasts,
+    #hamburger:checked ~ .menu-content #content-hamburger,
+    #dessert:checked ~ .menu-content #content-dessert { display: block; }
 
-    /* Nav */
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
-    nav a {
-      text-decoration: none; color: var(--muted); padding: .5rem .6rem; border-radius: .6rem;
+    /* Menu items layout */
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
     }
-    nav a:hover, nav a:focus-visible { color: var(--text); background: #f1f5f9; outline: none; }
+    .menu-item h3 { font-size: 18px; color: #333; }
+    .menu-item p { font-size: 14px; color: #666; }
+    .item-price { font-weight: bold; color: #f0c040; }
 
-    /* Left & right groups */
-    .nav-left, .nav-right { display: flex; align-items: center; }
-    .nav-left { justify-content: flex-start; }
-    .nav-right { justify-content: flex-end; }
-
-    /* Mobile */
-    .menu-toggle {
-      display: none;
-      border: 1px solid var(--ring); background: transparent; border-radius: .7rem;
-      padding: .45rem .6rem; cursor: pointer;
-    }
-    .menu-toggle:focus-visible { outline: 2px solid #94a3b8; outline-offset: 2px; }
-    .mobile-nav { display: none; border-top: 1px solid var(--ring); }
-    .mobile-nav ul { flex-direction: column; padding: .5rem 1rem; }
-    .mobile-nav a { display: block; padding: .7rem .5rem; }
-
-    @media (max-width: 800px) {
-      .container { grid-template-columns: auto 1fr auto; }
-      .nav-left, .nav-right { display: none; }
-      .menu-toggle { display: inline-flex; }
-      .logo { justify-self: center; }
-      .mobile-nav.open { display: block; }
-    }
   </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <!-- Mobile menu button (left) -->
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
-
-      <!-- Logo (center) -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+      </div>
       <div class="logo">
-        <a href="/" aria-label="Go to Home">
-          <!-- Replace with your own logo image if you have one -->
-          <svg viewBox="0 0 48 48" role="img" aria-hidden="true">
-            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="3" fill="none"/>
-            <path d="M16 26l6 6 10-14" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Brand</span>
-        </a>
+        <a href="#"><img src="./images/CapyCafe.png" alt="Cafe Logo" style="height:50px;"></a>
       </div>
-
-      <!-- Desktop nav (right/left) -->
-      <div class="nav-left" role="presentation">
-        <nav aria-label="Primary">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/menu">Menu</a></li>
-          </ul>
-        </nav>
+      <div class="nav-right">
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT US</a>
       </div>
-      <div class="nav-right" role="presentation">
-        <nav aria-label="Secondary">
-          <ul>
-            <li><a href="/about">About&nbsp;Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Mobile nav -->
-    <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/menu">Menu</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <script>
-    // Simple mobile toggle
-    const btn = document.querySelector('.menu-toggle');
-    const mobile = document.getElementById('mobile-nav');
-    btn.addEventListener('click', () => {
-      const open = mobile.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  </script>
+  <main class="menu-page">
+
+    <div class="menu-tabs">
+      <input type="radio" name="menu-tab" id="hot-drinks" checked>
+      <label for="hot-drinks">Hot Drinks</label>
+
+      <input type="radio" name="menu-tab" id="toasts">
+      <label for="toasts">Toasts</label>
+
+      <input type="radio" name="menu-tab" id="hamburger">
+      <label for="hamburger">Hamburger</label>
+
+      <input type="radio" name="menu-tab" id="dessert">
+      <label for="dessert">Dessert</label>
+    </div>
+
+    <div class="menu-content">
+      <!-- Hot Drinks -->
+      <div class="tab-content" id="content-hot-drinks">
+        <div class="menu-item">
+          <div>
+            <h3>Coffee</h3>
+            <p>Rich espresso with milk</p>
+          </div>
+          <div class="item-price">$3.50</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <h3>Tea</h3>
+            <p>Green or black tea</p>
+          </div>
+          <div class="item-price">$2.50</div>
+        </div>
+      </div>
+
+      <!-- Toasts -->
+      <div class="tab-content" id="content-toasts">
+        <div class="menu-item">
+          <div>
+            <h3>Avocado Toast</h3>
+            <p>With cherry tomatoes</p>
+          </div>
+          <div class="item-price">$5.00</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <h3>Cheese Toast</h3>
+            <p>Mozzarella on sourdough</p>
+          </div>
+          <div class="item-price">$4.50</div>
+        </div>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="tab-content" id="content-hamburger">
+        <div class="menu-item">
+          <div>
+            <h3>Beef Burger</h3>
+            <p>Classic beef patty with cheese</p>
+          </div>
+          <div class="item-price">$8.00</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <h3>Veggie Burger</h3>
+            <p>Plant-based patty with salad</p>
+          </div>
+          <div class="item-price">$7.50</div>
+        </div>
+      </div>
+
+      <!-- Dessert -->
+      <div class="tab-content" id="content-dessert">
+        <div class="menu-item">
+          <div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich dark chocolate</p>
+          </div>
+          <div class="item-price">$6.00</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <h3>Ice Cream</h3>
+            <p>Vanilla or chocolate</p>
+          </div>
+          <div class="item-price">$4.00</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
 </body>
 </html>

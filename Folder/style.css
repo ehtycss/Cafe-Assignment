@@ -128,10 +128,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu-image img {
   max-width: 100%;
   border-radius: 12px;
   object-fit: cover;
+}
+
+/* Hide radio buttons */
+.menu-tabs input[type="radio"] {
+  display: none;
+}
+
+/* Style labels as tabs */
+.menu-tabs label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #eee;
+  margin-right: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Highlight active tab */
+.menu-tabs input[type="radio"]:checked + label {
+  background-color: #f0c040;
+  color: white;
+}
+
+/* Hide all tab content by default */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-top: 2px solid #f0c040;
+  background-color: #fafafa;
+}
+
+h2 {
+  font-size: 36px;
+  color: #E0D8CD;
+  text-align: center;
+  padding: 10px;
+  background-color: #3D1005; width: 50%; border-radius: 12px;
+  margin: 20px auto;
 }
