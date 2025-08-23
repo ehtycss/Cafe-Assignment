@@ -1,13 +1,12 @@
-.sit-header {
+.site-header {
   display: flex;
   justify-content: center;
   padding: 20px 40px;
   background-color: #3d1005;
   border: 1px solid #dddd;
   border-radius: 12px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 1920px;
+  width: auto;
+
 }
 
 .navbar {
@@ -21,7 +20,7 @@
 .nav-right {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  gap: 200px;
+  gap: 300px;
 }
 
 .nav-left a,
@@ -29,7 +28,7 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #ebebeb;
-  font-size: 16px;
+  font-size: 18px;
 
 }
 
@@ -49,22 +48,48 @@ body {
   background: url(https://iguide.ai/_next/image?url=https%3A%2F%2Fimg.iguide.ai%2Fmedia%2Fca-phe-moc-viet-autogrill-vfs-fb_ca%20phe%20muoi.webp&w=1080&q=75);
 }
 
-h2{
+h2 {
   color: #3d1005;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   text-align: center;
 }
 
-p{
+p {
   color: #3d1005;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
-  margin-left: 60px; margin-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
   text-align: center;
 }
 
-.group-photos{
+.group-photos {
   display: flex;
-  justify-content: center; gap: 200px;
+  justify-content: center;
+  gap: 200px;
 }
+
+.nametag {
+  color: #3d1005;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  word-spacing: 200px;
+}
+
+.photo-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.photo{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+}
+  
