@@ -1,6 +1,6 @@
 .site-header {
   display: flex;
-  justify-content: center;       /* center navbar container */
+  justify-content: center;       
   padding: 20px 40px;
   background: #3D1005;
   border: 1px solid #ddd;
@@ -12,19 +12,21 @@
 
 .navbar {
   display: flex;
-  align-items: center;           /* vertical centering */
-  justify-content: space-between;/* distribute left/logo/right evenly */
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 /* Left and right nav groups */
 .nav-left, .nav-right {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   gap: 30px;                     /* spacing between items */
 }
 
 /* Links */
 .nav-left a, .nav-right a {
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #ebebeb;
   font-size: 1rem;
