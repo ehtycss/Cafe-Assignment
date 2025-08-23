@@ -42,3 +42,96 @@
 body {
     background-color: #E0D8CD;
 }
+
+.menu-page {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tabs */
+.menu-tabs {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.menu-tabs button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.menu-tabs button.active {
+  border-color: #b57e60;  /* example highlight color */
+  color: #b57e60;
+}
+
+/* Menu content layout */
+.menu-content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Menu items (left) */
+.menu-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-item.new {
+  border-color: #b57e60;
+}
+
+.menu-item .item-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.menu-item .item-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.menu-item .item-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  align-self: center;
+}
+
+/* Right side image */
+.menu-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
