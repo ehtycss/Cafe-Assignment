@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clean Header</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;   /* slate-900 */
+      --muted: #475569;  /* slate-600 */
+      --ring: #e2e8f0;   /* slate-200 */
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: var(--bg); }
+
+    /* Header */
+    header.site-header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: saturate(180%) blur(8px);
+      background: color-mix(in oklab, var(--bg) 75%, transparent);
+      border-bottom: 1px solid var(--ring);
+    }
+    .container {
+      max-width: 1100px; margin: 0 auto; padding: 0.75rem 1rem;
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.5rem;
+    }
+
+    /* Logo */
+    .logo a {
+      display: inline-flex; align-items: center; gap: .5rem;
+      text-decoration: none; color: inherit; font-weight: 700; letter-spacing: .02em;
+    }
+    .logo img, .logo svg { height: 28px; width: auto; }
+
+    /* Nav */
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+    nav a {
+      text-decoration: none; color: var(--muted); padding: .5rem .6rem; border-radius: .6rem;
+    }
+    nav a:hover, nav a:focus-visible { color: var(--text); background: #f1f5f9; outline: none; }
+
+    /* Left & right groups */
+    .nav-left, .nav-right { display: flex; align-items: center; }
+    .nav-left { justify-content: flex-start; }
+    .nav-right { justify-content: flex-end; }
+
+    /* Mobile */
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--ring); background: transparent; border-radius: .7rem;
+      padding: .45rem .6rem; cursor: pointer;
+    }
+    .menu-toggle:focus-visible { outline: 2px solid #94a3b8; outline-offset: 2px; }
+    .mobile-nav { display: none; border-top: 1px solid var(--ring); }
+    .mobile-nav ul { flex-direction: column; padding: .5rem 1rem; }
+    .mobile-nav a { display: block; padding: .7rem .5rem; }
+
+    @media (max-width: 800px) {
+      .container { grid-template-columns: auto 1fr auto; }
+      .nav-left, .nav-right { display: none; }
+      .menu-toggle { display: inline-flex; }
+      .logo { justify-self: center; }
+      .mobile-nav.open { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <!-- Mobile menu button (left) -->
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Logo (center) -->
+      <div class="logo">
+        <a href="/" aria-label="Go to Home">
+          <!-- Replace with your own logo image if you have one -->
+          <svg viewBox="0 0 48 48" role="img" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M16 26l6 6 10-14" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Brand</span>
+        </a>
+      </div>
+
+      <!-- Desktop nav (right/left) -->
+      <div class="nav-left" role="presentation">
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right" role="presentation">
+        <nav aria-label="Secondary">
+          <ul>
+            <li><a href="/about">About&nbsp;Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    // Simple mobile toggle
+    const btn = document.querySelector('.menu-toggle');
+    const mobile = document.getElementById('mobile-nav');
+    btn.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>
