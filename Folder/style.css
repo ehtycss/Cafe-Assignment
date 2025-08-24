@@ -170,3 +170,16 @@ h2 {
   background-color: #3D1005; width: 50%; border-radius: 12px;
   margin: 20px auto;
 }
+
+.background-image {
+  border-radius: 24px;
+  margin-left: 30px; margin-right: 30px;
+  color: #dfd8cd;
+  font-family: fantasy;
+  font-size: 80px;
+  stroke: #dfd8cd;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url(https://iguide.ai/_next/image?url=https%3A%2F%2Fimg.iguide.ai%2Fmedia%2Fca-phe-moc-viet-autogrill-vfs-fb_ca%20phe%20muoi.webp&w=1080&q=75);
+}
