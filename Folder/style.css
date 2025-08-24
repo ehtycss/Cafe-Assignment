@@ -179,8 +179,9 @@ body {
   font-size: 80px;
   stroke: #dfd8cd;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin-top: 36px;
+  padding-top: 500px;
+  padding-bottom: 40px;
   background: url(https://iguide.ai/_next/image?url=https%3A%2F%2Fimg.iguide.ai%2Fmedia%2Fca-phe-moc-viet-autogrill-vfs-fb_ca%20phe%20muoi.webp&w=1080&q=75);
 }
 
@@ -190,4 +191,65 @@ body {
   -webkit-text-stroke: 2px rgb(255, 0, 0);
   padding-top: 100px;
   padding-left: 15px;
+}
+
+.site-footer {
+  background: #3D1005;  /* Same as header */
+  color: #ebebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 80px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #f5a623;
+}
+
+.footer-column p, 
+.footer-column ul, 
+.footer-column a {
+  font-size: 0.95rem;
+  color: #ebebeb;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #f5a623; /* highlight color */
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  border-top: 1px solid #666;
+  padding-top: 15px;
 }
