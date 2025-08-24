@@ -48,7 +48,7 @@ body {
 
 .menu-page {
   padding: 60px 40px;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -78,20 +78,21 @@ body {
 /* Menu content layout */
 .menu-content {
   display: flex;
-  justify-content: flex-start;  /* keeps everything to the left */
-  align-items: flex-start;      /* top align menu items and image */
-  gap: 50px;                    /* space between menu items and image */
-  max-width: 1200px;            /* adjust as needed */
-  margin: 0 auto;               /* centers the container block */
+  flex-direction: column; /* stack items vertically for each section */
+  gap: 40px;
+  width: 100%; 
+  align-items: stretch;
+  margin: 0;
 }
 
 
 .menu-items {
-  flex: 1;
+  flex: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* keep menu items stacked */
   gap: 20px;
-  align-items: flex-start;      /* ensures each menu item is left-aligned */
+  width: 50%;
+  margin: 0;
 }
 
 .menu-item {
@@ -175,7 +176,7 @@ body {
   color: #E0D8CD;
   text-align: center;
   padding: 10px;
-  background-color: #3D1005; width: 80%; border-radius: 12px;
+  background-color: #3D1005; width: 20%; border-radius: 12px;
   margin: 20px auto;
 }
 
@@ -270,3 +271,8 @@ html, body {
   flex: 1;
 }
 
+.menu-section {
+  display: block;
+  margin-left: 40px;
+  padding-left: 40px;
+}
