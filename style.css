@@ -32,7 +32,7 @@ nav{
 h1{
   font-size: 280px;
   color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 5px rgb(255, 0, 0);
+  -webkit-text-stroke: 5px #7E3515;
   padding-top: 265px;
   padding-left: 15px;
 }
@@ -41,8 +41,67 @@ h2{
   padding-left: 35px;
   padding-bottom: 20px;
   padding-top: 20px;
+  color: #D4BBA4;
 }
-p{
-  font-size: 40px;
+.text{
+  font-size: 35px;
   padding-left: 30px;
+  color: #E0D8CD;
+}
+h3{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 10px;
+    color: #D4BBA4;
+}
+.description{
+  font-size: 23px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #E0D8CD;
+}
+.container .box{
+  display: grid;
+  grid-template-columns: repeat(autofit,minmax(270px,1fr));
+  gap: 15px;
+  box-shadow: 0 5px 10px color(red);
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.card{
+  width: 500px;
+  background-color: rgb(255, 51, 0);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+}
+.card-content{
+  padding: 30px;
+}
+.card-content h4{
+  font-size: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.card-content p{
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.lastpart h5{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+  margin-bottom: 300px;
+  padding: 50px;
+  background-color: brown;
+}
+body{
+  background-color: rgb(97, 15, 15);
 }
