@@ -100,13 +100,6 @@ p {
   font-size: 14px;
   line-height: 10px;
 }
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
     
 .parent {
     display: grid;
@@ -115,7 +108,7 @@ p {
     gap: 20px;
     justify-content: center; /* centers horizontally */
     align-content: center;   /* centers vertically */
-    height: 100vh;
+    margin-left: 20px; margin-right: 20px;
 }
     
 .div1 {

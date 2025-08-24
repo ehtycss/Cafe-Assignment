@@ -162,7 +162,7 @@ body {
   background-color: #fafafa;
 }
 
-h2 {
+.h2box {
   font-size: 36px;
   color: #E0D8CD;
   text-align: center;
@@ -182,4 +182,12 @@ h2 {
   padding-top: 200px;
   padding-bottom: 200px;
   background: url(https://iguide.ai/_next/image?url=https%3A%2F%2Fimg.iguide.ai%2Fmedia%2Fca-phe-moc-viet-autogrill-vfs-fb_ca%20phe%20muoi.webp&w=1080&q=75);
+}
+
+.h1nang {
+  font-size: 100px;
+  color: rgba(240, 248, 255, 0);
+  -webkit-text-stroke: 2px rgb(255, 0, 0);
+  padding-top: 100px;
+  padding-left: 15px;
 }
