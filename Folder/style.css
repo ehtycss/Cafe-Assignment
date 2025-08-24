@@ -78,21 +78,26 @@ body {
 /* Menu content layout */
 .menu-content {
   display: flex;
-  gap: 50px;
-  align-items: flex-start;
+  justify-content: flex-start;  /* keeps everything to the left */
+  align-items: flex-start;      /* top align menu items and image */
+  gap: 50px;                    /* space between menu items and image */
+  max-width: 1200px;            /* adjust as needed */
+  margin: 0 auto;               /* centers the container block */
 }
 
-/* Menu items (left) */
+
 .menu-items {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-start;      /* ensures each menu item is left-aligned */
 }
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* info left, price right */
+  width: 100%;
   padding: 15px 20px;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -170,7 +175,7 @@ body {
   color: #E0D8CD;
   text-align: center;
   padding: 10px;
-  background-color: #3D1005; width: 50%; border-radius: 12px;
+  background-color: #3D1005; width: 80%; border-radius: 12px;
   margin: 20px auto;
 }
 
