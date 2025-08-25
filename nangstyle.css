@@ -1,16 +1,19 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-header{
+
+/* Header Section */
+header {
   width: 100%;
   height: 100vh;
   background: url(abc.jpg);
   background-size: cover;
-  
 }
-nav{
+
+/* Navigation */
+nav {
   width: 100%;
   height: 100px;
   background-color: red;
@@ -19,18 +22,21 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+
+.logo {
   font-size: xx-large;
   padding-left: 30px;
 }
-.menu a{
+
+.menu a {
   text-decoration: none;
   padding: 10px 70px;
   color: aliceblue;
   font-size: 23px;
 }
-h1{
-<<<<<<< HEAD
+
+/* Headings */
+h1 {
   font-size: 230px;
   color: rgba(240, 248, 255, 0);
   -webkit-text-stroke: 4px #7E3515;
@@ -38,162 +44,60 @@ h1{
   padding-left: 40px;
   padding-bottom: 10px;
 }
-h2{
+
+h2 {
   font-size: 50px;
   padding-left: 60px;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  font-size: 230px;
-  color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 4px #7E3515;
-  padding-top: 100px;
-  padding-left: 40px;
-  padding-bottom: 10px;
-}
-h2{
-  font-size: 50px;
-  padding-left: 60px;
-  color: #7e3615;
-}
-.text{
-  font-size: 28px;
-  padding-left: 60px;
-  color: #3c1006;
-=======
-<<<<<<< HEAD
-  font-size: 180px;
-  color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 4px #7E3515;
-  padding-top: 0;
-  padding-left: 0;
-  margin-bottom: 25px;
-}
-h2{
-  font-size: 50px;
-  padding-left: 0;
-  padding-bottom: 25px;
-  padding-top: 25px;
-=======
-<<<<<<< HEAD
->>>>>>> f7d1710f1c80327153c103fad7393dd08630bd8d
-  font-size: 260px;
-  color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 5px #7E3515;
-  padding-top: 10px;
-  padding-left: 15px;
-}
-h2{
-  font-size: 60px;
-  padding-left: 35px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 196233ea0e9fc0a4ebabfcb53f5def3bd1f60f4f
->>>>>>> f7d1710f1c80327153c103fad7393dd08630bd8d
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   color: #D4BBA4;
   margin-bottom: 35px;
 }
-.text{
+
+.text {
   font-size: 28px;
-<<<<<<< HEAD
   padding-left: 60px;
   color: #E0D8CD;
-=======
-  padding-left: 0;
-  color: #E0D8CD;
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   line-height: 1.7;
 }
-h3{
+
+h3 {
   font-size: 50px;
   text-align: center;
-<<<<<<< HEAD
   padding-top: 10px;
   color: #7E3515;
   margin-bottom: 50px;
-=======
-<<<<<<< HEAD
-  padding-top: 10px;
-  color: #7E3515;
-  margin-bottom: 50px;
-=======
-  padding-top: 150px;
-  padding-bottom: 30px;
-<<<<<<< HEAD
-  color: #D4BBA4;
-  margin-bottom: 50px;
-=======
-    color: #D4BBA4;
->>>>>>> 196233ea0e9fc0a4ebabfcb53f5def3bd1f60f4f
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
 }
-.description{
+
+.description {
   font-size: 23px;
   text-align: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  color: #3c1006;
-=======
-  padding-bottom: 40px;
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   color: #E0D8CD;
   margin-bottom: 30px;
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
 }
-.container .box{
+
+/* Cards Section */
+.container .box {
   display: grid;
-  grid-template-columns: repeat(autofit,minmax(270px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 15px;
   box-shadow: 0 5px 10px color(red);
 }
-.card-container{
+
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-<<<<<<< HEAD
-  margin-top: 10px;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
   margin-top: 30px;
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   gap: 50px;
   padding: 40px;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-  margin-top: 5px;
->>>>>>> 196233ea0e9fc0a4ebabfcb53f5def3bd1f60f4f
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
 }
-.card{
+
+.card {
   width: 380px;
   height: 450px;
-<<<<<<< HEAD
   background-color: #D4BBA4;
-=======
-<<<<<<< HEAD
-  background-color: #D4BBA4;
-=======
-  background-color: rgb(255, 51, 0);
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   border-radius: 12px;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -210,29 +114,25 @@ h3{
   box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(255, 255, 255, 0.3);
 }
-.card-content{
+
+.card-content {
   padding: 35px 25px 25px 25px;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 12px 12px 0 0;
   border-bottom: 3px solid rgba(255, 255, 255, 0.4);
   flex: 1;
 }
-.card-content h4{
-<<<<<<< HEAD
+
+.card-content h4 {
   font-size: 32px;
-=======
-<<<<<<< HEAD
-  font-size: 35px;
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
   margin-bottom: 12px;
   text-align: center;
   font-weight: bold;
   color: #7E3515;
-  
 }
-.card-content p{
+
+.card-content p {
   font-size: 20px;
-<<<<<<< HEAD
   margin-bottom: 0;
   text-align: center;
   line-height: 1.5;
@@ -252,41 +152,6 @@ h3{
   flex-shrink: 0;
 }
 
-=======
-=======
-  font-size: 32px;
-  margin-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-.card-content p{
-  font-size: 18px;
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
-  margin-bottom: 0;
-  text-align: center;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
-.card-image {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  border-top: 4px solid #fff;
-  margin-top: 0;
-  border-radius: 0 0 12px 12px;
-  background-color: #fff;
-  padding: 8px;
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-}
-
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
 .card-image img {
   width: 100%;
   height: 100%;
@@ -298,6 +163,7 @@ h3{
   transform: scale(1.05);
 }
 
+/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
@@ -331,78 +197,22 @@ h3{
   display: block;
 }
 
-<<<<<<< HEAD
-body{
-  background-image: url(/photo/background.jpg);
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 196233ea0e9fc0a4ebabfcb53f5def3bd1f60f4f
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
-body{
+/* Body & Images */
+body {
   background-color: #E0D8CD;
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
 }
-img{
+
+img {
   width: 100%;
   max-width: 400px;
   object-fit: cover;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
+
+/* Why Choose Section */
 .why-choose-section {
   text-align: center;
   padding: 60px 40px;
   max-width: 1700px;
   margin: 0 auto;
 }
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-
-<<<<<<< HEAD
-.why-choose-section {
-  text-align: center;
-  padding: 60px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.why-choose-image {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.why-choose-image img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.why-choose-image img:hover {
-  transform: scale(1.02);
-}
-
-=======
-=======
-}
-p{
-  font-size: 40px;
-  padding-left: 30px;
-}
->>>>>>> 97bb619f332142eadb38c94d75eeb2440ee67a90
->>>>>>> 196233ea0e9fc0a4ebabfcb53f5def3bd1f60f4f
->>>>>>> 246b334bdd32ca44e8bec02b7d68f4c1157a8dbd
->>>>>>> f7d1710f1c80327153c103fad7393dd08630bd8d
->>>>>>> 8b463fe244b67b1c6697f1cdda7c1f223e85b137
