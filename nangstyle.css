@@ -30,17 +30,10 @@ nav{
   font-size: 23px;
 }
 h1{
-<<<<<<< HEAD
   font-size: 260px;
   color: rgba(240, 248, 255, 0);
   -webkit-text-stroke: 5px #7E3515;
   padding-top: 10px;
-=======
-  font-size: 280px;
-  color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 5px rgb(255, 0, 0);
-  padding-top: 265px;
->>>>>>> 97bb619f332142eadb38c94d75eeb2440ee67a90
   padding-left: 15px;
 }
 h2{
@@ -48,7 +41,6 @@ h2{
   padding-left: 35px;
   padding-bottom: 20px;
   padding-top: 20px;
-<<<<<<< HEAD
   color: #D4BBA4;
 }
 .text{
@@ -113,10 +105,3 @@ img{
   vertical-align: middle;
 }
 
-=======
-}
-p{
-  font-size: 40px;
-  padding-left: 30px;
-}
->>>>>>> 97bb619f332142eadb38c94d75eeb2440ee67a90
