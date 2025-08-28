@@ -343,9 +343,7 @@ p, .pleft {
   padding-top: 15px;
 }
 
-/* ---------------- Second CSS (with nang- prefix) ---------------- */
 
-/* Hero Header */
 .nang-alt-header {
   width: 100%;
   height: 100vh;
@@ -353,7 +351,6 @@ p, .pleft {
   background-size: cover;
 }
 
-/* Navigation */
 .nang-alt-nav {
   width: 100%;
   height: 100px;
@@ -376,11 +373,9 @@ p, .pleft {
   font-size: 23px;
 }
 
-/* Headings alt style */
 .nang-alt-h1 {
-  font-size: 230px;
-  color: rgba(240, 248, 255, 0);
-  -webkit-text-stroke: 4px #7E3515;
+  font-size: 200px;
+  color: #7E3515;
   padding-top: 100px;
   padding-left: 40px;
   padding-bottom: 10px;
@@ -388,8 +383,14 @@ p, .pleft {
 
 .nang-alt-h2 {
   font-size: 50px;
-  padding-left: 60px;
-  color: #D4BBA4;
+  color: #7E3515;
+  margin-bottom: 35px;
+}
+
+.nang-alt-h2-slow {
+  padding-right: 320px;
+  font-size: 50px;
+  color: #7E3515;
   margin-bottom: 35px;
 }
 
@@ -415,7 +416,6 @@ p, .pleft {
   margin-bottom: 30px;
 }
 
-/* Cards Section */
 .nang-container .nang-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -475,6 +475,7 @@ p, .pleft {
 .nang-card-content p {
   font-size: 20px;
   margin-bottom: 0;
+  padding-left: 50px;
   text-align: center;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
@@ -504,7 +505,6 @@ p, .pleft {
   transform: scale(1.05);
 }
 
-/* Hero Section */
 .nang-hero-section {
   display: flex;
   align-items: center;
@@ -538,7 +538,6 @@ p, .pleft {
   display: block;
 }
 
-/* Why Choose Section */
 .nang-why-choose-section {
   text-align: center;
   padding: 60px 40px;
