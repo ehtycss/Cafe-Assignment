@@ -342,3 +342,206 @@ p, .pleft {
   border-top: 1px solid #666;
   padding-top: 15px;
 }
+
+/* ---------------- Second CSS (with nang- prefix) ---------------- */
+
+/* Hero Header */
+.nang-alt-header {
+  width: 100%;
+  height: 100vh;
+  background: url(abc.jpg);
+  background-size: cover;
+}
+
+/* Navigation */
+.nang-alt-nav {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nang-alt-logo {
+  font-size: xx-large;
+  padding-left: 30px;
+}
+
+.nang-alt-menu a {
+  text-decoration: none;
+  padding: 10px 70px;
+  color: aliceblue;
+  font-size: 23px;
+}
+
+/* Headings alt style */
+.nang-alt-h1 {
+  font-size: 230px;
+  color: rgba(240, 248, 255, 0);
+  -webkit-text-stroke: 4px #7E3515;
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.nang-alt-h2 {
+  font-size: 50px;
+  padding-left: 60px;
+  color: #D4BBA4;
+  margin-bottom: 35px;
+}
+
+.nang-alt-text {
+  font-size: 28px;
+  padding-left: 60px;
+  color: #E0D8CD;
+  line-height: 1.7;
+}
+
+.nang-alt-h3 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+  color: #7E3515;
+  margin-bottom: 50px;
+}
+
+.nang-alt-description {
+  font-size: 23px;
+  text-align: center;
+  color: #E0D8CD;
+  margin-bottom: 30px;
+}
+
+/* Cards Section */
+.nang-container .nang-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  box-shadow: 0 5px 10px color(red);
+}
+
+.nang-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 50px;
+  padding: 40px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nang-card {
+  width: 380px;
+  height: 450px;
+  background-color: #D4BBA4;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.nang-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nang-card-content {
+  padding: 35px 25px 25px 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px 12px 0 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  flex: 1;
+}
+
+.nang-card-content h4 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #7E3515;
+}
+
+.nang-card-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nang-card-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-top: 4px solid #fff;
+  margin-top: 0;
+  border-radius: 0 0 12px 12px;
+  background-color: #fff;
+  padding: 8px;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.nang-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.nang-card:hover .nang-card-image img {
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.nang-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 40px;
+  height: calc(100vh - 100px);
+  gap: 40px;
+}
+
+.nang-hero-content {
+  flex: 1;
+  max-width: 55%;
+  margin-right: 20px;
+}
+
+.nang-hero-image {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.nang-hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+/* Why Choose Section */
+.nang-why-choose-section {
+  text-align: center;
+  padding: 60px 40px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
